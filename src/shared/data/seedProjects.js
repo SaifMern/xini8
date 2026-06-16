@@ -1,0 +1,116 @@
+export const PROJECT_STATUSES = [
+  "Draft",
+  "Submitted",
+  "Under Review",
+  "Approved",
+  "Funding Open",
+  "Funding Closed",
+  "In Production",
+  "Released",
+  "Archived",
+];
+
+export const lifecycleStages = [
+  { value: "Idea", label: "Idea" },
+  { value: "Script Development", label: "Script Development" },
+  { value: "Funding", label: "Funding" },
+  { value: "Production", label: "Production" },
+  { value: "Distribution", label: "Distribution" },
+  { value: "Revenue Tracking", label: "Revenue Tracking" },
+];
+
+export const seedProjects = [
+  {
+    id: "prj_001",
+    creatorId: "usr_creator_001",
+    title: "The Last Horizon",
+    genre: "Sci-Fi Drama",
+    language: "English",
+    runtime: 108,
+    synopsis: "A cinematic drama about humanity's final migration beyond Earth.",
+    description: "A premium science-fiction project designed for investor presentation, festival strategy, and streaming release.",
+    targetAudience: "18–45 global sci-fi audience",
+    budget: 500000,
+    fundingGoal: 250000,
+    currentFunding: 162500,
+    lifecycleStage: "Funding",
+    status: "Funding Open",
+    visibility: "public",
+    studio: {
+      brief: {
+        logline: "When Earth becomes uninhabitable, one artist documents humanity's last migration beyond the stars.",
+        tone: "Premium cinematic and emotional",
+        audience: "18–45 global sci-fi audience",
+        positioning: "Investor-ready feature film package",
+        creativeHook: "A human story about memory, survival, and identity beyond Earth.",
+      },
+      synopsisDraft: "A cinematic drama about humanity's final migration beyond Earth.",
+      projectDescription: "A premium science-fiction project designed for investor presentation, festival strategy, and streaming release.",
+      pitchSummary: "The Last Horizon is positioned as a premium sci-fi drama with strong audience appeal, funding momentum, and clear distribution potential across streaming and festival channels.",
+      documents: [
+        { id: "doc_001", documentType: "pitch_deck", fileName: "the-last-horizon-pitch-deck.pdf", fileSize: "2.4 MB", mimeType: "application/pdf", status: "Uploaded", uploadedAt: "2026-06-10", visibility: "Project team" },
+        { id: "doc_002", documentType: "script", fileName: "the-last-horizon-script.pdf", fileSize: "1.8 MB", mimeType: "application/pdf", status: "Uploaded", uploadedAt: "2026-06-11", visibility: "Project team" },
+      ],
+      lastGeneratedAt: "2026-06-12",
+    },
+    team: [
+      { id: "tm_001", name: "Ayan Malik", role: "Director", bio: "Award-focused sci-fi filmmaker.", profileUrl: "" },
+      { id: "tm_002", name: "Sophia Rehman", role: "Producer", bio: "Independent producer and financing lead.", profileUrl: "" },
+    ],
+    milestones: [
+      { id: "ms_001", title: "Pitch Deck Complete", description: "Investor pitch deck approved.", dueDate: "2026-06-20", status: "completed", fundingReleasePercentage: 10 },
+      { id: "ms_002", title: "Funding Round", description: "Raise first production round.", dueDate: "2026-08-01", status: "in_progress", fundingReleasePercentage: 35 },
+      { id: "ms_003", title: "Pre-production", description: "Casting, locations and schedule lock.", dueDate: "2026-09-15", status: "pending", fundingReleasePercentage: 25 },
+    ],
+    updates: [
+      { id: "up_001", title: "Campaign opened", body: "Funding campaign is now open for investor participation.", createdAt: "2026-06-12" },
+      { id: "up_002", title: "Distribution interest", body: "Two regional partners requested review access.", createdAt: "2026-06-14" },
+    ],
+    createdAt: "2026-06-01",
+    updatedAt: "2026-06-15",
+  },
+  {
+    id: "prj_002",
+    creatorId: "usr_creator_001",
+    title: "Karachi Nights",
+    genre: "Crime Thriller",
+    language: "English / Urdu",
+    runtime: 95,
+    synopsis: "A journalist uncovers a hidden financial network in Karachi.",
+    description: "A grounded thriller with regional authenticity, strong visual identity and streaming potential.",
+    targetAudience: "Thriller and crime drama viewers",
+    budget: 220000,
+    fundingGoal: 120000,
+    currentFunding: 0,
+    lifecycleStage: "Script Development",
+    status: "Under Review",
+    visibility: "private",
+    studio: {
+      brief: {
+        logline: "A young journalist uncovers a hidden financial network linking politics, crime, and media.",
+        tone: "Grounded, tense, and regional",
+        audience: "Crime thriller and regional drama viewers",
+        positioning: "Festival and streaming-ready regional thriller",
+        creativeHook: "A neon-lit investigation into power, silence, and survival.",
+      },
+      synopsisDraft: "A journalist uncovers a hidden financial network in Karachi.",
+      projectDescription: "A grounded thriller with regional authenticity, strong visual identity and streaming potential.",
+      pitchSummary: "",
+      documents: [
+        { id: "doc_003", documentType: "pitch_deck", fileName: "karachi-nights-pitch-deck.pdf", fileSize: "1.6 MB", mimeType: "application/pdf", status: "Uploaded", uploadedAt: "2026-06-15", visibility: "Project team" },
+      ],
+      lastGeneratedAt: null,
+    },
+    team: [
+      { id: "tm_003", name: "Hamza Khan", role: "Writer", bio: "Crime story specialist.", profileUrl: "" },
+    ],
+    milestones: [
+      { id: "ms_004", title: "Script Polish", description: "Final screenplay polish before approval.", dueDate: "2026-07-04", status: "in_progress", fundingReleasePercentage: 0 },
+    ],
+    updates: [
+      { id: "up_003", title: "Submitted for review", body: "Project package submitted to platform review.", createdAt: "2026-06-15" },
+    ],
+    createdAt: "2026-06-10",
+    updatedAt: "2026-06-15",
+  },
+];
